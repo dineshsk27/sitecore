@@ -8,11 +8,13 @@ At the time I can able to up the redis with /etc/init.d/redis-server start, But 
 
 #then take the backup of /etc/systemd/system/redis-server.service
 
-#then downoaded new redis-server init.d file and new systemd file for /etc/systemd/system/redis-server.service and /etc/init.d/redish-server.
+#While I am checking a logfile, I could able to see, Log path not have a access to perform log written. 
 
-#then Manually run /etc/init.d/redis-server start.
+#then I changed the log path in redis.conf from /var/log/redis-server.log to /var/log/redis/redis-server.log and then changed the ownership for /var/log/redis/ from "root:root" to "redis:redis".
 
-#while checking the nework status, redis is running, and i killed the all proceess "killall -9 redis-server" of redis-server, then excute the service redis-server start,
+#After that I can able to start redis-server services
 
 Service get started and running successfully
 
+
+-----------------END-----------------------------
