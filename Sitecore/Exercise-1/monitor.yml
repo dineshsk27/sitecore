@@ -1,0 +1,11 @@
+---
+- name: Let's copy our executable script to remote location, execute script and get result back.
+  remote_user: testuser
+  sudo: yes
+  hosts: vm
+  tasks:
+     - name: Transfer executable script script
+       script: /opt/ansible/playbook/utilization/utilization.sh
+       register: shell_output
+
+     - debug: var=shell_output
