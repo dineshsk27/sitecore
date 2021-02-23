@@ -8,7 +8,7 @@ At the time I can able to up the redis with /etc/init.d/redis-server start, But 
 
 #then take the backup of /etc/systemd/system/redis-server.service
 
-#then downoaded new redis-server config files for /etc/systemd/system/redis-server.service and /etc/init.d/redish-server.
+#then downoaded new redis-server init.d file and new systemd file for /etc/systemd/system/redis-server.service and /etc/init.d/redish-server.
 
 #then Manually run /etc/init.d/redis-server start.
 
